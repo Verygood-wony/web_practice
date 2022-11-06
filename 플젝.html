@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>201611466 정원용 프로젝트</title>
+		<meta charset="UTF-8">
+		<meta authors="정원용">
+		<link rel="stylesheet" href="./mycss.css">
+	</head>
+	<style>
+		body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", "맑은 고딕", sans-serif;}
+		body, html {height: 100%;color: #777;line-height: 1.8}
+		.bgimg-1, .bgimg-2, .bgimg-3 {background-attachment: fixed;background-position: center;background-repeat: no-repeat;background-size: cover}
+		.bgimg-1 {background-image: url("./main1.png");min-height: 100%}
+		.bgimg-2 {background-image: url("./main2.png");min-height: 400px}
+		.bgimg-3 {background-image: url("./main3.png");min-height: 400px}
+		.원용Project-wide {letter-spacing: 10px;}
+		.원용Project-hover-opacity {cursor: pointer;}
+		@media only screen and (max-device-width: 1600px) {
+			.bgimg-1, .bgimg-2, .bgimg-3 {
+				background-attachment: scroll;
+				min-height: 400px;
+		  	}
+		}
+	</style>
+	<body>
+		<div class="원용Project-top">
+			<div class="원용Project-bar" id="myNavbar">
+				<a href="#home" class="원용Project-bar-item 원용Project-button">홈</a>
+				<a href="#about" class="원용Project-bar-item 원용Project-button 원용Project-hide-small">소개</a>
+				<a href="#portfolio" class="원용Project-bar-item 원용Project-button 원용Project-hide-small">포트폴리오</a>
+				<a href="#contact" class="원용Project-bar-item 원용Project-button 원용Project-hide-small">찾아오시는길</a>
+				<audio loop id="player">
+					<source src="./DJ Okawari - Flower Dance.mp3" type="audio/mp3">
+				</audio>
+				<button class="원용Project-bar-item 원용Project-button 원용Project-hide-small 원용Project-right" onclick="document.getElementById('player').pause()">음악중지</button>
+				<button class="원용Project-bar-item 원용Project-button 원용Project-hide-small 원용Project-right" onclick="setHalfVolume();document.getElementById('player').play()">음악재생</button>
+			</div>
+		</div>
+		<div class="bgimg-1 원용Project-display-container 원용Project-opacity-min" id="home">
+			<div class="원용Project-display-middle" style="white-space:nowrap;">
+				<span class="원용Project-center 원용Project-padding-large 원용Project-black 원용Project-xlarge 원용Project-wide 원용Project-animate-opacity">
+					<span class="원용Project-hide-small"> 정원용의 블로그에 오신걸  </span>환영합니다! 
+				</span>
+			</div>
+		</div>
+		<div class="원용Project-content 원용Project-container 원용Project-padding-64" id="about">
+			<h3 class="원용Project-center">소개</h3>
+			<p class="원용Project-center"><em>준비가 있으면 근심이 없다.</em></p>
+			<p>&nbsp;유비무환(有備無患)은 제가 가장 좋아하는 고사성어입니다. '준비가 있으면 근심이 없다'는 뜻으로 항상 미래에 대한 준비가 있으면 근심과 위험이 없다는 말입니다. 저의 좌우명이기도 하면서 제가 항상 마음속에 품고있는 고사성어입니다. 저는 이러한 좌우명을 가지고 항상 미래에 대비해 연습하고, 공부하며 항상 어떠한 일이든 열심히 하여 좋은 성과를 내보일 수 있도록 노력하고있습니다.</p>
+			<div class="원용Project-row">
+				<div class="원용Project-col m6 원용Project-center 원용Project-padding-large">
+					<p><b>정원용</b></p><br>
+					<img src="./증명사진.jpg" width="300" class="원용Project-round 원용Project-image 원용Project-opacity 원용Project-hover-opacity-off" alt="증명사진">
+				</div>
+				<div class="원용Project-col m6 원용Project-hide-small 원용Project-padding-large">
+					<p>&nbsp;저는 현재 서원대학교 컴퓨터공학과 3학년 재학중이며, 사용가능한 프로그래밍 언어는 C, C#, Java, Python이 있습니다. 그 이외에도 다양한 컴퓨터공학의 기초들을 공부하였으며, 리눅스 프로그래밍, 네트워크 프로그래밍, 데이터베이스 시스템응용, IOT활용, 웹 프로그래밍 등 다양한 수업을 공부하였습니다.</p>
+					<p>&nbsp;현재 학기에는 창업프로젝트 과목으로 Java와 Python으로 구현한 나만의 Youtube 다운로더 프로젝트를 수행하였고, 그 이전에는 Java로 구현한 점프킹 게임, Java로 구현한 지뢰찾기 게임, C로 구현한 대학생을 위한 가계부 프로그램 등을 수행했습니다. 앞으로도 다양한 프로젝트를 수행할 예정이며, 프로젝트를 수행하면 바로 블로그에 최신화하도록 하겠습니다.</p>
+					<p>&nbsp;향후 생각하고 있는 진로는 빅데이터 관련 직종이나 VR관련 직종, 안드로이드 개발자, 응용 프로그램 개발자등을 생각하고 있어서 해당 분야에 관련된 자격증 취득 및 공부를 계속해 나갈 예정입니다.</p>
+				</div>
+			</div>
+			<p class="원용Project-large 원용Project-center 원용Project-padding-16"><br>사용 가능한 언어의 숙련도</p>
+			<p class="원용Project-wide">Java</p>
+			<div class="원용Project-light-grey">
+				<div class="원용Project-container 원용Project-padding-small 원용Project-dark-grey 원용Project-center" style="width:90%">90%</div>
+			</div>
+			<p class="원용Project-wide">Python</p>
+			<div class="원용Project-light-grey">
+				<div class="원용Project-container 원용Project-padding-small 원용Project-dark-grey 원용Project-center" style="width:70%">70%</div>
+			</div>
+			<p class="원용Project-wide">C</p>
+			<div class="원용Project-light-grey">
+				<div class="원용Project-container 원용Project-padding-small 원용Project-dark-grey 원용Project-center" style="width:75%">75%</div>
+			</div>
+			<p class="원용Project-wide">C#</p>
+			<div class="원용Project-light-grey">
+				<div class="원용Project-container 원용Project-padding-small 원용Project-dark-grey 원용Project-center" style="width:60%">60%</div>
+			</div>
+		</div>
+		<div class="원용Project-row 원용Project-center 원용Project-dark-grey 원용Project-padding-16">
+			<div class="원용Project-quarter 원용Project-section">
+				<span class="원용Project-xlarge">4+</span><br>
+					완료한 프로젝트
+			</div>
+			<div class="원용Project-quarter 원용Project-section">
+				<span class="원용Project-xlarge">4.14</span><br>
+					평균 학점
+			</div>
+			<div class="원용Project-quarter 원용Project-section">
+				<span class="원용Project-xlarge">17</span><br>
+					이수한 전공과목
+			</div>
+			<div class="원용Project-quarter 원용Project-section">
+				<span class="원용Project-xlarge">3</span><br>
+					학년
+			</div>
+		</div>
+		<div class="bgimg-2 원용Project-display-container 원용Project-opacity-min">
+			<div class="원용Project-display-middle">
+				<span class="원용Project-xxlarge 원용Project-text-white 원용Project-wide">PORTFOLIO</span>
+			</div>
+		</div>
+		<div class="원용Project-content 원용Project-container 원용Project-padding-64" id="portfolio">
+			<h3 class="원용Project-center">포트폴리오</h3>
+			<p class="원용Project-center"><em>제가 수행한 프로젝트입니다.<br>이미지를 클릭하시면 동영상이 재생됩니다.</em></p><br>
+			<div class="원용Project-row-padding 원용Project-center">
+				<div class="원용Project-col m6">
+					자바 프로젝트 점프킹<br>
+					<a href="./점프킹.mp4" title="점프킹 실행영상" target="동영상">
+					<img src="./점프킹.png" width="400" class="원용Project-hover-opacity 원용Project-portfolio-img" alt="점프킹" onclick="setVisible()"></a>
+				</div>
+				<div class="원용Project-col m6">
+					나만의 유튜브 다운로더<br>
+					<a href="./나만의유튜브다운로더.mp4" title="나만의 유튜브다운로더 실행영상" target="동영상">
+					<img src="./나만의유튜브다운로더.png" width="400" class="원용Project-hover-opacity 원용Project-portfolio-img" alt="나만의유튜브다운로더" onclick="setVisible()"></a>
+				</div>
+			</div>
+		</div>
+		<iframe src="" id="ifrm" name="동영상" width="1280" height="720" style="border:none;visibility:hidden;display:none" class="원용Project-portfolio-img-margin"></iframe>
+		<div class="원용Project-row-padding 원용Project-center 원용Project-section">
+			<button id="ibtn" class="원용Project-button 원용Project-padding-large 원용Project-black" style="margin-top:10px;visibility:hidden;display:none" onclick="setUnVisible()">숨기기</button>
+		</div>
+		<div class="bgimg-3 원용Project-display-container 원용Project-opacity-min">
+			<div class="원용Project-display-middle">
+				<span class="원용Project-xxlarge 원용Project-text-white 원용Project-wide">CONTACT</span>
+			</div>
+		</div>
+		<div class="원용Project-content 원용Project-container 원용Project-padding-64" id="contact">
+			<h3 class="원용Project-center">찾아오시는길</h3>
+			<p class="원용Project-center"><em>언제든지 연락주세요.</em></p>
+			<div class="원용Project-row 원용Project-padding-32 원용Project-section">
+				<div class="원용Project-col m4 원용Project-container">
+					<img src="./지도.png" class="원용Project-image 원용Project-round" style="width:100%">
+				</div>
+				<div class="원용Project-col m8 원용Project-panel">
+					<div class="원용Project-large 원용Project-margin-bottom">
+						<i class="원용Project-hover-text-black 원용Project-xlarge 원용Project-margin-right"></i> 대한민국 충북 청주시<br>
+						<i class="원용Project-hover-text-black 원용Project-xlarge 원용Project-margin-right"></i> 핸드폰: +82 010-8571-3231<br>
+						<i class="원용Project-hover-text-black 원용Project-xlarge 원용Project-margin-right"></i> 이메일: sksrosua1022@naver.com<br>
+					</div>
+					<p>항상 연락 기다리겠습니다.</p>
+					<form>
+						<div class="원용Project-row-padding" style="margin:0 -16px 8px -16px">
+							<div class="원용Project-half">
+								<input class="원용Project-input 원용Project-border" type="text" placeholder="Name" required name="Name">
+							</div>
+							<div class="원용Project-half">
+								<input class="원용Project-input 원용Project-border" type="text" placeholder="Email" required name="Email">
+							</div>
+						</div>
+						<input class="원용Project-input 원용Project-border" type="text" placeholder="Message" required name="Message">
+						<button class="원용Project-button 원용Project-black 원용Project-right 원용Project-section" type="submit" onclick="alert('메세지 전송 완료!')">보내기</button>
+					</form>
+				</div>
+			</div>
+		</div>
+		<footer class="원용Project-center 원용Project-black 원용Project-padding-64">
+			<a href="#home" class="원용Project-button 원용Project-light-grey">홈으로</a>
+			<p>Copyright © 2020 정원용. All Rights Reserved.</p>
+		</footer>
+		<script>
+			window.onscroll = function() {myFunction()};
+			function myFunction() {
+				var navbar = document.getElementById("myNavbar");
+				if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+					navbar.className = "원용Project-bar" + " 원용Project-card" + " 원용Project-animate-top" + " 원용Project-white";
+			    }else {
+					navbar.className = navbar.className.replace(" 원용Project-card 원용Project-animate-top 원용Project-white", "");
+			    }
+			}
+			function setHalfVolume() {
+				var id = document.getElementById("player");
+				id.volume = 0.2;
+			}
+			function setVisible() {
+				var iframe = document.getElementById("ifrm");
+				var ibtn = document.getElementById("ibtn");
+				iframe.style = "border:none";
+				ibtn.style = "margin-top:10px";
+			}
+			function setUnVisible() {
+				var iframe = document.getElementById("ifrm");
+				var ibtn = document.getElementById("ibtn");
+				iframe.style = "border:none;visibility:hidden;display:none";
+				ibtn.style = "margin-top:10px;visibility:hidden;display:none";
+				iframe.src = "";
+			}
+		</script>
+	</body>
+</html>
